@@ -1,0 +1,85 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .home-container {
+    width: 100%;
+  }
+  
+  /* Header Section */
+  .header {
+    display: flex;
+    justify-content: center; /* Center content */
+    align-items: center;
+    padding: 20px;
+    background: #007bff; /* Blue Header */
+    position: relative;
+  }
+  
+  /* Default Navigation Menu (Visible on Desktop) */
+  .nav-menu ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+  }
+  
+  .nav-menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 10px 15px;
+  }
+  
+  /* Hide Menu Items on Mobile Initially */
+  .menu-icon {
+    display: none;
+    font-size: 32px;
+    color: white;
+    cursor: pointer;
+  }
+  
+  /* Mobile Styles */
+  @media (max-width: 768px) {
+    /* Show Only Hamburger Menu Initially */
+    .menu-icon {
+      display: block;
+    }
+  
+    .nav-menu {
+      display: none; /* Hide navigation by default */
+      position: absolute;
+      top: 60px;
+      left: 0;
+      width: 100%;
+      background: rgba(255, 255, 255, 0.9);
+      backdrop-filter: blur(10px);
+      padding: 20px 0;
+      text-align: center;
+      flex-direction: column; /* Vertical layout */
+    }
+  
+    /* Show Menu When Active */
+    .nav-menu.active {
+      display: flex;
+    }
+  
+    .nav-menu ul {
+      flex-direction: column; /* Stack items vertically */
+    }
+  
+    .nav-menu a {
+      display: block;
+      padding: 15px;
+      font-size: 20px;
+      color: black;
+      transition: background 0.3s ease;
+    }
+  
+    .nav-menu a:hover {
+      background: rgba(0, 0, 0, 0.1);
+    }
+  }
+  

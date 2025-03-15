@@ -1,0 +1,203 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .home-container {
+    width: 100%;
+  }
+  
+  /* Header Section */
+  .header {
+    display: flex;
+    justify-content: center; /* Center content in header */
+    align-items: center;
+    padding: 20px;
+    background: #007bff; /* Blue Header */
+    position: relative;
+  }
+  
+  /* Default Navigation Menu (Visible on Desktop) */
+  .nav-menu {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 10px 15px;
+  }
+  
+  /* Hide Menu Items on Mobile Initially */
+  .menu-icon {
+    display: none;
+    font-size: 32px;
+    color: white;
+    cursor: pointer;
+  }
+  
+  /* Mobile Styles */
+  @media (max-width: 768px) {
+    /* Show Only Hamburger Menu Initially */
+    .menu-icon {
+      display: block;
+      
+      
+    }
+
+    .header {
+        display: flex;
+        justify-content: left; /* Center content in header */
+        align-items: center;}
+  
+    .nav-menu {
+      display: none; /* Hide navigation by default */
+      position: absolute;
+      top: 60px;
+      left: 0;
+      width: 100%;
+      background: rgba(255, 255, 255, 0.9);
+      backdrop-filter: blur(10px);
+      padding: 20px 0;
+      text-align: center;
+     /* Vertical layout */
+    }
+  
+    /* Show Menu When Active */
+    .nav-menu.active {
+      display: flex;
+    }
+  
+    .nav-menu a {
+      display: block;
+      padding: 15px;
+      font-size: 20px;
+      color: black;
+      transition: background 0.3s ease;
+    }
+  
+    .nav-menu a:hover {
+      background: rgba(0, 0, 0, 0.1);
+    }
+  }
+  
+
+
+  /* <div className="header">
+  //         <ul>
+  //           {menuItems.map((item, index) => (
+  //             <li key={index}>
+  //               <a
+  //                 href="#"
+  //                 className={activeIndex === index ? "active" : ""}
+  //                 onClick={() => setActiveIndex(index)}
+  //               >
+  //                 {item}
+  //               </a>
+  //             </li>
+  //           ))}
+  //         </ul>
+  //       </div> */
+
+
+  // import { useState } from "react";
+// import Diamond from "../../assets/Doctor.png";
+// import name from "../../assets/name.png";
+// import tick from "../../assets/tick.png";
+// import smile from "../../assets/smile.png";
+// import beats from "../../assets/beats.png";
+// import heart from "../../assets/heart.png";
+// import { FaBars, FaTimes } from "react-icons/fa";
+// import "./Home.css";
+
+
+
+
+/* // function Home() {
+  
+//   const [activeIndex, setActiveIndex] = useState(0); 
+    //  const [isMenuOpen, setIsMenuOpen] = useState(false);
+//   const menuItems = ["Home", "Service", "About me", "Contact", "Blogs", "Emergency"];
+
+//   return (
+//     <div className="homeover">
+//       <div className="header">
+//         <ul>
+//           {menuItems.map((item, index) => (
+//             <li key={index}>
+//               <a
+//                 href="#"
+//                 className={activeIndex === index ? "active" : ""}
+//                 onClick={() => setActiveIndex(index)}
+//               >
+//                 {item}
+//               </a>
+//             </li>
+//           ))}
+//         </ul>
+//       </div>
+
+//       {/* Home Section */}
+//       <div className="home">
+//         <div className="home-left">
+//           <div className="img-con">
+//             <div className="tick">
+//               <img src={tick} alt="tick.png" />
+//               <h6>Regular <br /> Chekeup</h6>
+//             </div>
+//             <div className="smile">
+//               <img src={smile} alt="smile.png" />
+//               <h6>4k+ <br /><span className="inter">happy Patients</span></h6>
+//             </div>
+//           </div>
+//            <span className="doc-img"><img src={Diamond} alt="Doctor" /> </span> 
+//         </div>
+//         <div className="home-right">
+//           <span className="centerlize">
+//           <h5>Hi I am <img src={name} alt="name" /></h5>
+//           <h1>DR.C.KAVI ARASI</h1>
+//           <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis culpa asperiores.</p>
+//           <div className="home-btn" >
+//             <button className="home-btn1" >More Information</button>
+//             <button className="home-btn2" >Book Appointment</button>
+//           </div>
+//           </span>
+//           <img className="beate" src={beats} alt="beat" />
+//           <img  className="heart" src={heart} alt="heart" />
+//         </div>
+//       </div>
+//     </div>
+//   );
+// }
+
+// export default Home;    import { useState } from "react";
+import { FaBars, FaTimes } from "react-icons/fa"; // Import icons
+import "./style.css";
+
+function Home() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false); // State for hamburger menu
+
+  const menuItems = ["Home", "Service", "About Me", "Contact", "Blogs", "Emergency"];
+
+  return (
+    <div className="home-container">
+      {/* Header Section */}
+      <header className="header">
+        {/* Hamburger Menu Icon (Only on Mobile) */}
+        <div className="menu-icon" onClick={() => setIsMenuOpen(!isMenuOpen)}>
+          {isMenuOpen ? <FaTimes /> : <FaBars />}
+        </div>
+
+        {/* Navigation Menu (Hidden by default on mobile, appears vertically when clicked) */}
+        <nav className={nav-menu ${isMenuOpen ? "active" : ""}}>
+          {menuItems.map((item, index) => (
+            <a key={index} href="#" onClick={() => setIsMenuOpen(false)}>
+              {item}
+            </a>
+          ))}
+        </nav>
+      </header> merge the content */
