@@ -37,7 +37,7 @@ import Home from "./components/Home/Home";
 import Service from "./components/Services/services";
 import ServiceOutline from "./components/Service-outline/Service-outline";
 import Testimonials from "./components/Testimonials/Testimonials";
-import About from "./components/About/about";
+import About from "./components/About/About";
 import Blog from "./components/Blogs/Blog";
 import AppointmentForm from "./components/contact/AppointmentForm";
 import Footer from "./components/Footer/Footer";
