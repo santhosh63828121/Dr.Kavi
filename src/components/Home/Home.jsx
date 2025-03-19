@@ -182,7 +182,7 @@ function Home() {
           <span className="centerlize">
             <h5>Hi I am <img src={name} alt="name" /></h5>
             <h1>DR.C.KAVI ARASI</h1>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis culpa asperiores.</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br /> Nobis culpa asperiores.</p>
             <div className="home-btn">
               <button className="head-btn2">Book Consultation</button>
               <button className="home-btn3">Learn More</button>

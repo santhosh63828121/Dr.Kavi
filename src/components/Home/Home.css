@@ -550,10 +550,259 @@ line-height: normal;
   .nav-menu a:hover {
     background: rgba(0, 0, 0, 0.1);
   }
+  
 
-  /* .header ul li:last-child {
+  .home{
+    display: block;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+   
+  }
 
-    margin-left: 30px;
-  } */
+  .heart{
+    display: none;
+    
+  }
+
+  .beate{
+    display: none;
+  }
+
+  .home-left {
+    width: 100%;
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+  
+  }
+
+  .img-con {
+    display: flex;
+    gap: 115px;
+    padding-left: 10px;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    top: 0px;
+    left: 0px;
+   
+  }
+  
+  .tick img {
+    width: 35px;
+    height: 35px;
+  }
+  
+  .home-left img {
+    width: 500px;
+    height: 469px;
+    
+  }
+  
+  .doc-img {
+    /* padding-left: 80px; */
+    margin-top: 0px;
+    animation: backInLeft 1s ease-in-out;
+  }
+
+  .doc-img img{
+    width: 300px;
+    height: 269px;
+  }
+  
+  .tick img {
+    width: 18px;
+    /* Adjust width as needed */
+    height: 18px;
+  
+  }
+  
+  .smile img {
+    width: 25px;
+    height: 25px;
+  }
+
+  .tick {
+    width: 100px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 11px;
+    margin-top: 30px;
+    gap: 15px;
+    border-radius: 14.976px;
+    background: rgba(246, 249, 255, 0.60);
+    box-shadow: 0px 0px 14.477px 0px rgba(42, 167, 255, 0.16);
+    backdrop-filter: blur(5.9903998374938965px);
+    animation: backInDown 1s ease-in-out;
+  }
+  
+  .tick h6 {
+    color: #2F2F2F;
+    font-family: Roboto;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 13.2px;
+    /* 13.2px */
+  }
+  
+  .smile h6 {
+    color: #2F2F2F;
+  
+    font-family: Roboto;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 15px;
+    /* 140% */
+  }
+  
+  .inter {
+    color: rgba(47, 47, 47, 0.73);
+    text-align: center;
+    font-family: Roboto;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    /* 164.706% */
+  }
+  
+  .smile {
+    width: 150.93px;
+    height: 54.59px;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 30px;
+  background: rgba(246, 249, 255, 0.60);
+  box-shadow: 0px 0px 29px 0px #DDE0E4;
+  backdrop-filter: blur(12.649999618530273px);
+    animation: backInDown 1s ease-in-out;
+  }
+  
+  .home-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width:100%;
+    padding-top: 20px;
+    position: relative;
+    
+  
+  }
+  
+  .home-right h1 {
+    transform: translateY(0px);
+    /* Moves text up */
+  }
+  
+  .centerlize h5 {
+    
+  
+    color: #1F2937;
+  font-family: Poppins;
+  font-size: 30px;
+  
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+    transform: translateY(-40px);
+  }
+  
+  .home-right h1 {
+    
+    text-shadow: -4px 4px 4px rgba(0, 0, 0, 0.13);
+    font-family: "Rubik Mono One";
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    color: #1F2937;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+    transform: translateY(-80px);
+  }
+  
+  .home-right p {
+    color: #1F2937;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing:normal;
+    transform: translateY(-100px);
+  }
+
+  .centerlize {
+    width: 620px;
+    height: 217px;
+    margin-right: 0px;
+    animation: backInRight 1s ease-in-out;
+    display: inline-block;
+
+  
+  }
+  
+  .home-btn {
+    display: flex;
+    gap: 0px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transform: translateY(-90px);
+  }
+  
+  .home-btn button {
+    width: 200px;
+    height: 40px;
+    border: 2px solid white;
+    cursor: pointer;
+    
+  
+  }
+  
+  .home-btn1 {
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    background-color: transparent;
+  }
+  
+  .home-btn3 {
+    display: none;
+    width: 156.859px;
+    height: 52px;
+    padding: 14px 33.859px 15px 34px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 9999px;
+    border: 2px solid black;
+    color: white;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  
+  }
 
 }
